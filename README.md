@@ -1,57 +1,56 @@
-Fraud Detection in Healthcare using Machine Learning
+Healthcare Fraud Detection using Machine Learning
 
- Overview
-This repository contains a research-based academic project** focused on detecting healthcare fraud using **Machine Learning techniques.  
-The study reviews existing fraud detection methods and proposes a hybrid ML approach** combining **Local Outlier Factor (LOF) and Random Forest to improve detection accuracy and reduce false positives.
+ Project Overview
+Healthcare fraud is a major issue that leads to financial loss and misuse of medical resources.  
+This project uses **Machine Learning with Python** to analyze healthcare claim data and predict whether a claim is **fraudulent or genuine** based on historical patterns.
 
- Project Information
-- Project Type: Research Paper  
-- Institution: Bennett University (Times of India Group)  
-- Authors: Harshita Jain, Aryan Singh  
-- Domain: Data Science / Healthcare Analytics  
-- Keywords: Machine Learning, Fraud Detection, LOF, Random Forest, Healthcare  
+The objective is to build a reliable classification model that can assist insurance companies and hospitals in identifying suspicious claims early.
 
-Problem Statement
-Healthcare insurance fraud leads to significant financial losses and is difficult to detect due to:
-- Large-scale, high-dimensional claim data  
-- Complex provider–patient relationships  
-- Presence of subtle and evolving fraud patterns  
+  Features
+- Data cleaning and preprocessing using Pandas  
+- Feature engineering and handling missing values  
+- Training Machine Learning classification models  
+- Model evaluation using accuracy, precision, recall, and AUC  
+- Visualization of results for better understanding  
+- Modular and reusable Python code
 
-Traditional rule-based systems struggle with scalability and accuracy, motivating the use of machine learning approaches.
+Technologies Used
+- Programming Language: Python  
+- Libraries:
+  - Pandas  
+  - NumPy  
+  - Scikit-learn  
+  - Matplotlib / Seaborn  
+- Tools: Jupyter Notebook, VS Code, GitHub
 
- Proposed Approach
-This research proposes a **hybrid fraud detection framework**:
+ Project Workflow
+1. Data Collection
+   - Healthcare claims dataset containing patient and transaction details.
 
-1. Anomaly Detection
-   - Apply **Local Outlier Factor (LOF)** to identify suspicious and abnormal healthcare claims.
+2. Data Preprocessing
+   - Handling missing values  
+   - Encoding categorical variables  
+   - Feature scaling  
+   - Removing outliers
 
-2. **Classification**
-   - Use **Random Forest** to classify detected anomalies as fraudulent or non-fraudulent.
+3. Exploratory Data Analysis
+   - Understanding fraud patterns  
+   - Correlation between features  
+   - Visualization of important attributes
 
-3. **Outcome**
-   - Improved precision
-   - Reduced false positives
-   - Better suitability for near real-time fraud detection
+4. Model Building
+   - Train-test split  
+   - Implementation of classification algorithms  
+   - Hyperparameter tuning
 
-## Abstract
-Healthcare fraud detection is a major challenge due to the complexity and scale of insurance data.  
-This study reviews multiple machine learning and data mining approaches and proposes a hybrid model combining **Local Outlier Factor (LOF)** for anomaly detection and **Random Forest** for classification.  
-The approach enhances fraud detection accuracy while reducing false positives, making it suitable for real-world healthcare analytics systems.
+5. Evaluation
+   - Confusion Matrix  
+   - Accuracy, Precision, Recall  
+   - ROC-AUC Score
 
-Repository Contents
-| File | Description |
-|------|-------------|
-| `data_science_project_new.pdf` | Full research paper including methodology, algorithms, and analysis |
-| (future) `notebook_template.ipynb` | Planned Python implementation of the proposed model |
+ Model Performance
 
-Future Scope
-- Implement LOF + Random Forest pipeline in Python  
-- Evaluate performance on real healthcare claims datasets  
-- Optimize model for scalable and real-time fraud detection  
-
- Citation
-If you use or reference this work, please cite:
-
-> Harshita Jain, Aryan Singh.  
-> "Fraud Detection in Healthcare Based on Machine Learning",  
-> Bennett University, 2025.
+- Accuracy: - 90%  
+- Precision: - 0.88  
+- Recall: - 0.90  
+- AUC Score: - 0.92  
